@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(100);
+  const [count, setCount] = useState(0);
   const prevCount = useRef();
 
   useEffect(() => {
@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className="App">
-      <button onClick={() => setCount(count + 1)}>Like | {count}</button>
+      <button onClick={() => setCount(count + 1)}>Clicks | {count}</button>
       <h2>previous count: {prevCount.current}</h2>
     </div>
   );
