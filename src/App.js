@@ -2,17 +2,24 @@ import { useState, useRef, useEffect } from "react";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-  const prevCount = useRef();
+  const [person, setPerson] = useState({ name: 'Bob' });
+  const render = useRef(0);
+
+  const handleClick = () => {
+    setPerson({
+      name: 'Bob'
+    })
+  }
 
   useEffect(() => {
-    prevCount.current = count;
-  }, [count]);
+    render.current = render.current + 1;
+  });
 
   return (
     <div className="App">
-      <button onClick={() => setCount(count + 1)}>Clicks | {count}</button>
-      <h2>previous count: {prevCount.current}</h2>
+      {person?.name}
+      <button onClick={handleClick}>Clicks</button>
+      <h2>render count: {render.current}</h2>
     </div>
   );
 }
