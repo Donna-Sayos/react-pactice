@@ -1,26 +1,16 @@
 import { useState, useRef, useEffect } from "react";
-import "./App.css";
+import TodoList from "./components/TodoList";
 
 function App() {
-  const [person, setPerson] = useState({ name: 'Bob' });
-  const render = useRef(0);
-
-  const handleClick = () => {
-    setPerson({
-      name: 'Bob'
-    })
-  }
-
-  useEffect(() => {
-    render.current = render.current + 1;
-  });
-
+  const [todos, setTodos] = useState([])
   return (
-    <div className="App">
-      {person?.name}
-      <button onClick={handleClick}>Clicks</button>
-      <h2>render count: {render.current}</h2>
-    </div>
+    <>
+      <TodoList todos={todos} />
+      <input type="text" />
+      <button>ADD</button>
+      <button>CLEAR</button>
+      <div>0 to do left!</div>
+    </>
   );
 }
 
