@@ -1,7 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import SingleTodo from "./components/SingleTodo";
 
-const LOCAL_STORAGE_KEY = "react-practice-todo-app";
+// const LOCAL_STORAGE_KEY = "react-practice-todo-app";
 
 function App() {
   const [text, setText] = useState("");
@@ -38,7 +38,7 @@ function App() {
         <SingleTodo key={i} todo={todo} deleteHandler={deleteHandler} />
       ))}
     </div>
-  );
-}
+  )
+};
 
 export default App;
