@@ -2,6 +2,8 @@ import React from 'react';
 
 export default function AddProducts() {
   return (
-    <div>AddProducts</div>
+    <div className='listOfProducts'>
+      <h1>Add Products</h1>
+    </div>
   )
 };
