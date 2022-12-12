@@ -10,9 +10,7 @@ export default function Products() {
         <Link to="/products/list">List</Link>
         <Link to="/products/add">Add</Link>
       </div>
-      <h3>above outlet</h3>
       <Outlet />
-      <h3>under outlet</h3>
     </div>
   )
 };

@@ -8,13 +8,11 @@ export default function ListProducts() {
   return (
     <div className='listOfProducts'>
         <div className='productsList'>
-            {fakeProducts.map((product, i) => (
-                <div className='productDisplay' key={i} onClick={() => navigate(`/products/${i}`)}>
-                    <h1>{product.name}</h1>
-                    <h4>{product.type}</h4>
-                    <h5>{product.price}</h5>
+            {fakeProducts && fakeProducts.map((product, i) => (
+                <div className='productDisplay' key={i} onClick={() => navigate(`/products/${product.id}`)}>
+                    <h3>"{product.name}"</h3>
+                    <h5 className='product-font'>${product.price}</h5>
                     <img src={product.img} alt='product' />
-                    <p>{product.description}</p>
                 </div>
             ))}
         </div>
