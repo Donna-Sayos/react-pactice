@@ -8,8 +8,8 @@ export default function ListProducts() {
   return (
     <div className='listOfProducts'>
         <div className='productsList'>
-            {fakeProducts.map((product) => (
-                <div className='productDisplay' onClick={() => navigate(`/products/${product.id}`)}>
+            {fakeProducts.map((product, i) => (
+                <div className='productDisplay' key={i} onClick={() => navigate(`/products/${i}`)}>
                     <h1>{product.name}</h1>
                     <h4>{product.type}</h4>
                     <h5>{product.price}</h5>
