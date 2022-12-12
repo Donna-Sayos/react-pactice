@@ -7,26 +7,59 @@
 body {
   padding: 0%;
   margin: 0%;
-  font-family: "Open Sans", sans-serif;
+  font-family: monospace;
+}
+
+.header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid #a2a2a2;
+	background-color: #f4f4f4;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.header img {
+  height: 80px;
+  position: absolute;
+  top: 50%,
+}
+
+.logo {
+  margin: 0;
+}
+
+.logo a {
+  padding: 10px 15px;
+	display: block;
 }
 
 nav {
   margin: 0;
   width: 100%;
   height: 80px;
-  background-color: rgb(69, 62, 249);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: white;
-  text-decoration: none;
+  padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 a {
-  color: white;
+  color: #34495e;
   text-decoration: none;
   margin: 10px;
   font-size: 25px;
+}
+
+a:hover {
+  color: #718daa;
 }
 
 .search {
@@ -37,24 +70,24 @@ a {
 
 .searchTerm {
   width: 100%;
-  border: 3px solid rgb(69, 62, 249);
+  border: 3px solid #718daa;
   border-right: none;
   padding: 5px;
-  height: 20px;
+  height: 36px;
   border-radius: 5px 0 0 5px;
   outline: none;
   color: #9dbfaf;
 }
 
 .searchTerm:focus {
-  color: rgb(69, 62, 249);
+  color: #718daa;
 }
 
 .searchButton {
   width: 70px;
   height: 36px;
   border: 1px solid rgb(69, 62, 249);
-  background: rgb(69, 62, 249);
+  background: #718daa;
   text-align: center;
   color: #fff;
   border-radius: 0 5px 5px 0;
@@ -90,7 +123,7 @@ a {
 .productsNav a {
   width: 150px;
   height: 50px;
-  background-color: rgb(69, 62, 249);
+  background-color: #9dbfaf;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -107,6 +140,7 @@ a {
 
 .productsList {
   columns: 3 auto;
+  column-gap: 1.5rem;
   display: inline-block;
 }
 
@@ -118,7 +152,22 @@ a {
   text-align: center;
 }
 
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error button {
+  height: 40px;
+  width: 80px;
+  font-size: 20px;
+  margin: 5px;
+}
+
 * {
   padding-top: 0;
   margin-top: 0;
+  box-sizing: border-box;
 }
