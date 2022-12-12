@@ -11,7 +11,7 @@ export default function ProductDisplay() {
         <h1>{fakeProducts[id - 1].name}</h1>{" "}
         <h4>{fakeProducts[id - 1].type}</h4>{" "}
         <h5>{fakeProducts[id - 1].price}</h5>{" "}
-        <img src={fakeProducts[id - 1].img} alt='product image' />{" "}
+        <img src={fakeProducts[id - 1].img} alt='product' />{" "}
         <p>{fakeProducts[id - 1].description}</p>{" "}
       </div>
     </div>

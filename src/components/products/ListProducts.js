@@ -13,7 +13,7 @@ export default function ListProducts() {
                     <h1>{product.name}</h1>
                     <h4>{product.type}</h4>
                     <h5>{product.price}</h5>
-                    <img src={product.img} alt='product image' />
+                    <img src={product.img} alt='product' />
                     <p>{product.description}</p>
                 </div>
             ))}
