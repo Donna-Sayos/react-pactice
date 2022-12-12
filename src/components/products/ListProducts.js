@@ -9,7 +9,7 @@ export default function ListProducts() {
     <div className='listOfProducts'>
         <div className='productsList'>
             {fakeProducts && fakeProducts.map((product, i) => (
-                <div className='productDisplay' key={i} onClick={() => navigate(`/products/${product.id}`)}>
+                <div className='productListDisplay' key={i} onClick={() => navigate(`/products/${product.id}`)}>
                     <h3>"{product.name}"</h3>
                     <h5 className='product-font'>${product.price}</h5>
                     <img src={product.img} alt='product' />

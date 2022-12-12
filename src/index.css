@@ -11,6 +11,9 @@ body {
 }
 
 .header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
 	padding-top: .5em;
 	padding-bottom: .5em;
 	border: 1px solid #a2a2a2;
@@ -116,6 +119,8 @@ a:hover {
   width: 70%;
   height: 80px;
   border-radius: 12px;
+  position: absolute;
+  top: 10%;
   display: flex;
   justify-content: center;
 }
@@ -142,14 +147,56 @@ a:hover {
   columns: 3 auto;
   column-gap: 1.5rem;
   display: inline-block;
+  position: absolute;
+  top: 16%;
 }
 
-.productDisplay {
+.productListDisplay {
   width: 300px;
   height: 300px;
   background-color: rgb(233, 233, 233);
   cursor: pointer;
   text-align: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productDisplay {
+  width: 700px;
+  height: 700px;
+  background-color: rgb(233, 233, 233);
+  cursor: pointer;
+  text-align: center;
+  position: absolute;
+  top: 20%;
+}
+
+.productDisplay button {
+  position: absolute;
+  top: -5%;
+}
+
+.productDisplay h3 {
+  font-size: 45px;
+}
+.productDisplay h4 {
+  font-size: 35px;
+}
+.productDisplay h5 {
+  font-size: 25px;
+}
+.productDisplay p {
+  font-size: 25px;
+}
+
+.img {
+  height: 50%;
+  width: 50%;
+  margin: 10px;
 }
 
 .error {
