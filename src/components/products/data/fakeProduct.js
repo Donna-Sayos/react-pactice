@@ -19,8 +19,8 @@ function createRandomProducts() {
     description: faker.commerce.productAdjective(),
     price: faker.commerce.price(100, 2000),
     img: faker.image.food(160, 160, Math.ceil(Math.random() * 50)),
-  };
-}
+  }
+};
 
 Array.from({ length: 50 }).forEach(() =>
   fakeProducts.push(createRandomProducts())

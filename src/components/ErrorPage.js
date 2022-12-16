@@ -10,5 +10,5 @@ export default function ErrorPage() {
       <button onClick={() => navigate("/products/list")}>back</button>
       <img src={IMG} alt="error img" />
     </div>
-  );
-}
+  )
+};
