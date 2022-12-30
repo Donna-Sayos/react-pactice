@@ -4,7 +4,7 @@ import IMG from "./assets/logo.png";
 import Homepage from "../src/components/homepage/Homepage";
 import About from "../src/components/about/About";
 import Login from "../src/components/login/Login";
-import ErrorPage from "./components/ErrorPage";
+import ErrorPage from "../src/components/fallback/ErrorPage";
 
 import Products from "../src/components/products/Products";
 import AddProducts from "../src/components/products/AddProducts";

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { fakeProducts } from '../products/data/fakeProduct';
-import ErrorPage from '../ErrorPage';
+import ErrorPage from '../fallback/ErrorPage';
 
 export default function ProductDisplay() {
   const { id } = useParams();
