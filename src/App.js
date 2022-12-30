@@ -1,25 +1,13 @@
 import { lazy, Suspense } from "react";
-
 import { Routes, Route, Link } from "react-router-dom";
+
 import IMG from "./assets/logo.png";
-
-// import Homepage from "../src/components/homepage/Homepage";
-// import About from "../src/components/about/About";
-// import Login from "../src/components/login/Login";
-
 import ErrorPage from "../src/components/fallback/ErrorPage";
 import Loading from "../src/components/fallback/Loading";
-
-// import Products from "../src/components/products/Products";
-// import AddProducts from "../src/components/products/AddProducts";
-// import Search from "../src/components/products/Search";
-// import ProductDisplay from "../src/components/products/ProductDisplay";
-// import ListProducts from "./components/products/ListProducts";
 
 const Homepage = lazy(() => import("../src/components/homepage/Homepage"));
 const About = lazy(() => import("../src/components/about/About"));
 const Login = lazy(() => import("../src/components/login/Login"));
-
 const Products = lazy(() => import("../src/components/products/Products"));
 const AddProducts = lazy(() =>
   import("../src/components/products/AddProducts")
