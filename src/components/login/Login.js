@@ -2,6 +2,8 @@ import React from 'react';
 
 export default function Login() {
   return (
-    <div style={{ position: "absolute", top: "10%", left: "50%" }}>Login</div>
+    <div className="mt-5 p-5" style={{ position: "absolute" }}>
+      <h1 className="mt-5 px-5">Hello from Login..</h1>
+    </div>
   )
 };

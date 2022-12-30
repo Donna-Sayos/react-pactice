@@ -22,6 +22,6 @@ function createRandomProducts() {
   }
 };
 
-Array.from({ length: 50 }).forEach(() =>
+Array.from({ length: 100 }).forEach(() =>
   fakeProducts.push(createRandomProducts())
 );

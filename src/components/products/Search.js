@@ -5,8 +5,8 @@ export default function Search() {
     <div>
       <div className='wrap'>
         <div className='search'>
-          <input type='text' className='searchTerm' placeholder='What are you looking for today?' />
-          <button type='submit' className='searchButton'>search</button>
+          <input type='text' className='searchTerm form-control form-control-lg' placeholder='Type to search..' />
+          <button type='submit' className='searchButton btn btn-lg'>search</button>
         </div>
       </div>
     </div>

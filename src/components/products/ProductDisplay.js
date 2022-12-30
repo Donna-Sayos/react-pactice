@@ -12,8 +12,8 @@ export default function ProductDisplay() {
 
   return (
     <div className='center'>
-      <div className='productDisplay'>
-        <button onClick={() => navigate("/products/list")}>back</button>
+      <div className='productDisplay mt-5 p-5'>
+        <button className='mt-5 back' onClick={() => navigate("/products/list")}>back</button>
         <h3>{product.name}</h3>
         <h4>{product.type}</h4>
         <h5>${product.price}</h5>

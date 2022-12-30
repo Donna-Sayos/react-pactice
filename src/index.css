@@ -76,9 +76,7 @@ a:hover {
   border: 3px solid #718daa;
   border-right: none;
   padding: 5px;
-  height: 36px;
   border-radius: 5px 0 0 5px;
-  outline: none;
   color: #9dbfaf;
 }
 
@@ -87,15 +85,17 @@ a:hover {
 }
 
 .searchButton {
-  width: 70px;
-  height: 36px;
   border: 1px solid rgb(69, 62, 249);
   background: #718daa;
-  text-align: center;
   color: #fff;
   border-radius: 0 5px 5px 0;
-  cursor: pointer;
-  font-size: 20px;
+}
+
+.searchButton:hover {
+  border: 1px solid rgb(55, 52, 148);
+  background: rgba(48, 35, 143, 0.378);
+  color: #fff;
+  transition: all 400ms ease;
 }
 
 /*Resize the wrap to see the search bar change!*/
@@ -211,6 +211,11 @@ a:hover {
   width: 80px;
   font-size: 20px;
   margin: 5px;
+}
+
+.back {
+  position: relative;
+  left: 47%;
 }
 
 * {
