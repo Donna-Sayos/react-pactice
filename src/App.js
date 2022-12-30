@@ -1,3 +1,5 @@
+import { lazy, Suspense } from "react";
+
 import { Routes, Route, Link } from "react-router-dom";
 import IMG from "./assets/logo.png";
 
