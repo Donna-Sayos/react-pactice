@@ -19,6 +19,8 @@ export default function Login() {
                     type="email"
                     id="email"
                     className="form-control form-control-lg"
+                    required
+                    minLength={4}
                     ref={btnRef}
                   />
                   <label className="inp form-label" htmlFor="email">
@@ -29,6 +31,8 @@ export default function Login() {
                   <input
                     type="password"
                     id="password"
+                    required
+                    minLength={8}
                     className="form-control form-control-lg"
                   />
                   <label className="inp form-label" htmlFor="password">
@@ -36,7 +40,11 @@ export default function Login() {
                   </label>
                 </div>
                 <div className="form-check d-flex justify-content-start mb-4">
-                  <input className="form-check-input" type="checkbox" id="checkbox" />
+                  <input
+                    className="form-check-input"
+                    type="checkbox"
+                    id="checkbox"
+                  />
                   <label
                     className="checkbox form-check-label mx-1"
                     htmlFor="checkbox"
