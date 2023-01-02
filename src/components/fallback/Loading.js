@@ -1,9 +1,11 @@
-import LOADING from "../../assets/loading.gif";
+import { Spinner } from "react-bootstrap";
 
 export default function Loading() {
   return (
-    <div className="mt-5 p-5 text-center">
-      <img className="mt-5 p-5" src={LOADING} alt="loading..." />
+    <div className="text-center">
+      <Spinner className="spinner" role="status">
+        <span className="visually-hidden">Loading...</span>
+      </Spinner>
     </div>
   );
 }
