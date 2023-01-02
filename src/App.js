@@ -1,8 +1,11 @@
 import AppRoutes from "./components/routes/AppRoutes";
+import { useThemeContext } from "./components/providers/ThemeProvider";
 
 function App() {
+  const { theme } = useThemeContext();
+
   return (
-    <div>
+    <div id={theme}>
       <div className="main">
         <AppRoutes />
       </div>
