@@ -17,6 +17,7 @@ export default function Login() {
                 <div className="form-outline mb-4">
                   <input
                     type="email"
+                    id="email"
                     className="form-control form-control-lg"
                     ref={btnRef}
                   />
@@ -27,6 +28,7 @@ export default function Login() {
                 <div className="form-outline mb-4">
                   <input
                     type="password"
+                    id="password"
                     className="form-control form-control-lg"
                   />
                   <label className="inp form-label" htmlFor="password">
@@ -34,7 +36,7 @@ export default function Login() {
                   </label>
                 </div>
                 <div className="form-check d-flex justify-content-start mb-4">
-                  <input className="form-check-input" type="checkbox" />
+                  <input className="form-check-input" type="checkbox" id="checkbox" />
                   <label
                     className="checkbox form-check-label mx-1"
                     htmlFor="checkbox"
