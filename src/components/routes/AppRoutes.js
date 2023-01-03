@@ -1,5 +1,7 @@
 import { lazy, Suspense } from "react";
 import { Routes, Route, Link } from "react-router-dom";
+import ReactSwitch from "react-switch";
+import { useThemeContext } from "../providers/ThemeProvider";
 
 import LOGO from "../../assets/logo.png";
 import ErrorPage from "../fallback/ErrorPage";
@@ -19,6 +21,7 @@ const ProductDisplay = lazy(() =>
 const ListProducts = lazy(() => import("../products/ListProducts"));
 
 export default function AppRoutes() {
+  const { theme, toggleTheme } = useThemeContext();
   return (
     <>
       <header className="header">
