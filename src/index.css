@@ -53,6 +53,7 @@ nav {
   padding: 10px 15px;
 	text-transform: uppercase;
 	text-align: center;
+
 	display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -364,12 +365,18 @@ a:hover {
 .switch {
   display: flex;
   width: 150vw;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 
   position: absolute;
-  top: 10px;
+  top: 4px;
+}
+
+#light .switch-label {
+  color: #eea990;
+  font-weight: bold;
 }
 #dark .switch-label {
-  color:#f6d992;
+  color:#aa6f73;
+  font-weight: bold;
 }

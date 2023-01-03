@@ -41,6 +41,10 @@ export default function AppRoutes() {
           <Link to="login" className="nav-item">
             Login
           </Link>
+          <div className="switch">
+            <label className="switch-label m-1">{theme === "light" ? "Light Mode" : "Dark Mode"}</label>
+            <ReactSwitch onChange={toggleTheme} checked={theme === "dark"}/>
+          </div>
         </nav>
       </header>
       <Suspense fallback={<Loading />}>
