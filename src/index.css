@@ -136,6 +136,7 @@ a:hover {
   height: 50px;
   background-color: #9dbfaf;
   border-radius: 5px;
+  
   display: flex;
   align-items: center;
   justify-content: center;
