@@ -2,6 +2,7 @@ import { lazy, Suspense } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import ReactSwitch from "react-switch";
 import { useThemeContext } from "../providers/ThemeProvider";
+import "./index.css";
 
 import LOGO from "../../assets/logo.png";
 import ErrorPage from "../fallback/ErrorPage";

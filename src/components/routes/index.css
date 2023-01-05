@@ -1,0 +1,18 @@
+.switch {
+    display: flex;
+    width: 150vw;
+    justify-content: flex-end;
+    align-items: center;
+  
+    position: absolute;
+    top: 4px;
+}
+
+#light .switch-label {
+    color: #eea990;
+    font-weight: bold;
+}
+#dark .switch-label {
+    color:#aa6f73;
+    font-weight: bold;
+}

@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import "./index.css";
 import DIAMOND from "../../assets/diamond.png";
 import { IoLogoFacebook, IoLogoGoogle } from "react-icons/io5";
 
