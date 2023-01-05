@@ -108,7 +108,7 @@ a:hover {
 .wrap {
   width: 30%;
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -136,7 +136,7 @@ a:hover {
   height: 50px;
   background-color: #9dbfaf;
   border-radius: 5px;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -155,7 +155,7 @@ a:hover {
   column-gap: 1.5rem;
   display: inline-block;
   position: absolute;
-  top: 16%;
+  top: 20%;
 }
 
 .productListDisplay {
